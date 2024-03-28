@@ -2,46 +2,51 @@
 #include "main.h"
 #include <stdlib.h>
 #include <limits.h>
+
 /**
  *_itoa - change integer to string
- *@a: given integer
+ *@num: given integer
  *Return: size of returned integer
  */
-int _itoa(int value)
+int _itoa(int num)
 {
+	int i = 0, j, k = 0, temp, len = 0;
+	int isNegative = 0;
 	char *str;
-	int size = 0, i = 0, j, n, temp;
 
-   	 if (value < 0) 
-   	 {
-		 putchar('-');
-		 n = -value;
-		 size++;
-    	} 
-    	else if (value == 0) 
-  		size++;
-    	else 
-        	n = value;
+	if (num < 0)
+	{
+		isNegative = 1;
+		num = -num;
+		len++;
+	}
+	temp = num;
+	do {
+		num /= 10;
+		len++;
+	} while (num > 0);
+	if (isNegative)
+	{
+		if (num == INT_MIN)
+			num += 1, k = 1;
+	}
+	str = malloc(len);
+	if (str == NULL)
+		exit(77);
+	num = temp;
+	do {
+		str[i++] = num % 10 + '0';
+		num /= 10;
+	} while (num > 0);
 
-    	temp = n;
-    	do {
-        	n /= 10;
-        	size++;
-    	} while (n);
-    	str = malloc(size);
-	
-    	/* Reset n to its original value for conversion to string */
-    	n = temp;
-    	i = 0;
-    	do {
-        	str[i++] = (n % 10) + '0';
-        	n /= 10;
-    	} while (n);
-
-    	for (j = size - 1; j >= 0; j--) {
-        	putchar(str[j]);
-    	}
-
-    	free(str);
-    	return (size);
+	if (isNegative)
+		str[i++] = '-';
+	str[i] = '\0';
+	for (j = i - 1; j >= 0; j--)
+		_putchar(str[j]);
+	if (k)
+		str[i - 1] += 1;
+	len = 0;
+	len = _putsnumber(str);
+	return (len);
 }
