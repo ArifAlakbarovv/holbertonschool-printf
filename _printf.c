@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 /**
- * _printf - Print formatted output to stdout 
+ * _printf - Prints formatted output to the standard output (stdout)
  * @format: The format string containing the format specifiers
  * Return: The number of characters printed on success, or -1 on failure.
  */
