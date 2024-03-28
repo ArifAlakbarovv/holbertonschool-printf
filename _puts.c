@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _puts - Writes a null-terminated string to the standard output (stdout)
