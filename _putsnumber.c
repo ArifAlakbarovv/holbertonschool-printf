@@ -2,8 +2,8 @@
 #include <stddef.h>
 
 /**
- * _putsnumber - print string
- * @str: string
+ * _putsnumber - Writes a string representing a number to the standard output (stdout)
+ * @str: The string representing the number to be written
  * Return: void
  */
 int _putsnumber(char *str)
