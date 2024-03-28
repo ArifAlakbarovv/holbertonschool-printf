@@ -6,7 +6,7 @@
 /**
  * _printf - Print formatted output to stdout 
  * @format: The format string containing the format specifiers
- * Return: the number of characters printed
+ * Return: The number of characters printed on success, or -1 on failure.
  */
 int _printf(const char *format, ...)
 {
