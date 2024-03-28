@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * _putchar - print 1 character
+ * _putchar - Print 1 character
  * @c: character
  * Return: void
  */
