@@ -2,6 +2,8 @@
 #define _MAIN_H
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
+
 
 /*Function prortypes writed here*/
 int _itoa(int value);
