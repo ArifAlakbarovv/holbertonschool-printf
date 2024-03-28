@@ -61,7 +61,8 @@ int print_string(va_list types, char buffer[],
 	{
 		if (flags & F_MINUS)
 		{
-			fwrite(1, &str[0], length);
+			fwrite(str, 1, length, stdout); 
+;
 			for (i = width - length; i > 0; i--)
 				write(1, " ", 1);
 			return (width);
