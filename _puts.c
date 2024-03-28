@@ -2,8 +2,8 @@
 #include <stddef.h>
 
 /**
- * _puts - print string
- * @str: string
+ * _puts - Writes a null-terminated string to the standard output (stdout)
+ * @str: The string to be written
  * Return: void
  */
 int _puts(char *str)
