@@ -39,6 +39,7 @@ int print_string(va_list types, char buffer[],
 	int length = 0, i, F_MINUS;
 	char *str = va_arg(types, char *);
 
+	#define UNUSED(x) (void)(x)
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
