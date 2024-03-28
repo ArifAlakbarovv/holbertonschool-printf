@@ -1,7 +1,5 @@
 #include "main.h"
 #include <stdarg.h>
-#include <stddef.h>
-#include <unistd.h>
 
 /**
  * _printf - Prints formatted output to the standard output (stdout)
