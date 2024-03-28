@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stddef.h>
+#include <stdio.h>
 
 /************************* PRINT CHAR *************************/
 
