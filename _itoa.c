@@ -4,7 +4,7 @@
 #include <limits.h>
 
 /**
- *_itoa - change integer to string
+ *_itoa - Converts an integer to a string
  *@num: given integer
  *Return: size of returned integer
  */
