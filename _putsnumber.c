@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * _putsnumber - Writes a string representing a number to the standard output (stdout)
+ * _putsnumber - Writes a string representing a number to the so
  * @str: The string representing the number to be written
  * Return: void
  */
